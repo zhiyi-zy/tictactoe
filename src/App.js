@@ -34,7 +34,6 @@ function App() {
     for (let line of winningLines) {
       const [a, b, c] = line;
       if (board[a[0]][a[1]] !== '' && board[a[0]][a[1]] === board[b[0]][b[1]] && board[b[0]][b[1]] === board[c[0]][c[1]]) {
-        //Game won
         setWinPlayer(player === 'X' ? 'X' : 'O')
         setWinningCells([a, b, c])
         setWinCount(player);
